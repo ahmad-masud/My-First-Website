@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ahmad Masud is a talented programmar who is always looking for opportunities to better himself. Click on the link above to visit his personal portfolio website."
+    />
+    <meta name="author" content="Ahmad Masud" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmad Masud</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/52e1e07217.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javascript/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+  </head>
+  <body>
+    <a id="home" class="reveal" ></a>
+
+    <!-- Side Navigation Bar -->
+    <nav class="navbar" id="main-nav">
+      <ul class="side-nav">
+        <li class="nav-item"><a class="site-name"><span>Ahmad</span> Masud</a></li>
+        <hr />
+        <li class="nav-item">
+          <a href="#home" class="nav-link"><i class="fas fa-home"></i>Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about-me" class="nav-link"
+            ><i class="fas fa-address-card"></i>About</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#my-skills" class="nav-link"
+            ><i class="fas fa-medal"></i>Skills</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#what-i-do" class="nav-link"
+            ><i class="fas fa-desktop"></i>What I Do</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#work-experience" class="nav-link"
+            ><i class="fas fa-briefcase"></i>Work</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#contact-section" class="nav-link"
+            ><i class="fas fa-envelope"></i>Contact</a
+          >
+        </li>
+        <hr />
+        <div class="nav-socials">
+          <a
+            href="https://www.facebook.com/AhmadMasud25"
+            class="facebook"
+            class="social-link"
+            target="”_blank”"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://twitter.com/_AhmadMasud"
+            class="twitter"
+            class="social-link"
+            target="”_blank”"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/_ahmadmasud/"
+            class="instagram"
+            class="social-link"
+            target="”_blank”"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ahmad-masud-469926225/"
+            class="linkedin"
+            class="social-link"
+            target="”_blank”"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://discord.gg/Vqgu6mgCdH"
+            class="discord"
+            class="social-link"
+            target="”_blank”"
+          >
+            <i class="fab fa-discord"></i>
+          </a>
+        </div>
+      </ul>
+    </nav>
+
+    <!-- Top Navigation Bar -->
+    <div class="top-bar-container">
+      <div class="top-bar" id="topbar">
+        <div class="website-name">
+          <a>Ahmad <span>Masud</span></a>
+        </div>
+        <nav class="top-nav-bar" id="top-nav-bar">
+          <ul class="top-nav">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#about-me">About</a>
+            </li>
+            <li>
+              <a href="#my-skills">Skills</a>
+            </li>
+            <li>
+              <a href="#what-i-do">What I Do</a>
+            </li>
+            <li>
+              <a href="#work-experience">Work</a>
+            </li>
+            <li>
+              <a href="#contact-section">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="nav-toggle-button" onClick="myFnc(this)" id="toggle-button">
+          <div class="toggle-icon"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="color-bar">
+      <i class="bi bi-palette-fill"></i>
+      <div>      
+        <button id="red" onClick="changeColor(this, '#dc143c')"></button>
+        <button id="orange" onClick="changeColor(this, '#ffa500')"></button>
+        <button id="yellow" onClick="changeColor(this, '#ffd700')"></button>
+        <button id="green" onClick="changeColor(this, '#228b22')"></button>
+        <button id="blue" onClick="changeColor(this, '#3973f4')"></button>
+        <button id="purple" onClick="changeColor(this, '#663399')"></button>
+      </div>
+    </div>
+
+    <div id="main">
+
+      <!-- Hero Section -->
+      <div class="hero-container">
+        <div class="hero-image">
+          <span class="square1">
+            <img
+              src="images/profile-image.png"
+              alt="profile-image"
+              class="profile-image"
+          /></span>
+          <span class="square2"></span>
+          <span class="square3"> </span>
+        </div>
+        <div class="hero-text">
+          <header id="welcome-text">
+            <span id="greeting-text">Hi, </span>Welcome To My<span
+              id="website-text"
+              >Website</span
+            >
+          </header>
+          <p id="welcome-sentence" class="anim-typewriter">
+            Scroll down
+            <span>to learn a little about me and what I do.</span>
+          </p>
+          <a class="hero-learn-button" href="#about-me">Learn More</a>
+        </div>
+      </div>
+
+      <!-- About Me Section -->
+      <div class="container reveal" id="about-me">
+        <div class="container-padding">
+          <h2>About Me</h2> 
+          <p id="paragraph">
+            My name is Ahmad, I am currently a senior high school student and I
+            hope to become a professional programmer one day. I discovered my
+            passion for computers and science at the age of eight when my dad gave
+            me his old IBM laptop. Since then, my personal projects have continued
+            to foster my interest in coding, as I directly apply what I have
+            learned in school to other extracurriculars. I am a hardworking and
+            creative person who is interested in computers. After graduating high
+            school I plan to work hard for a computer science degree. If you need
+            any more information about me please click the following link for my
+            resume;
+            <a href="files/Resume.pdf" download="Resume" class="resume-file"
+              ><i class="fas fa-file-pdf"></i> My Resume</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <!-- My Skills Section -->
+      <div class="container reveal" id="my-skills">
+        <div class="container-padding">
+          <h2>My Skills</h2>
+          <ul class="skills-list">
+            <li>Software testing</li>
+            <li>Cross-platform testing</li>
+            <li>Proficient in HTML</li>
+            <li>Organization</li>
+            <li>In-store support</li>
+            <li>High-energy attitude</li>
+            <li>Computer skills</li>
+            <li>Communication</li>
+          </ul>
+          <div class="skills-bar">
+            <div class="bar">
+              <div class="info">
+                <span>HTML</span>
+                <span class="percent">90%</span>
+              </div>
+              <div class="progress-line html">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>CSS</span>
+                <span class="percent">75%</span>
+              </div>
+              <div class="progress-line css">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>Javascript</span>
+                <span class="percent">65%</span>
+              </div>
+              <div class="progress-line javascript">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>Lua</span>
+                <span class="percent">80%</span>
+              </div>
+              <div class="progress-line lua">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>Python</span>
+                <span class="percent">30%</span>
+              </div>
+              <div class="progress-line python">
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- What I do section -->
+      <div class="container reveal" id="what-i-do">
+        <h2>What I Do</h2>
+        <div class="what-i-do-container">
+          <div>
+            <i class="icon fa-solid fa-dice"></i>
+            <header>Game Developement</header>
+            <p>
+              I have completed many game projects in the past. I can program in
+              Lua, Lua C, Javascript, GML and a little bit of Python as well.
+            </p>
+          </div>
+          <div>
+            <i class="icon fa-brands fa-chrome"></i>
+            <header>Web Developement</header>
+            <p>
+              I have designed a few websites in the past, but this is my most
+              polished one. I am very proficient in Html, great at web design
+              with CSS and Javascript.
+            </p>
+          </div>
+          <div>
+            <i class="icon fa-solid fa-graduation-cap"></i>
+            <header>Learn</header>
+            <p>
+              Learning is a huge part of my personal developement as I have so
+              much more knowledge to acquire to become the best version of
+              myself.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Work Experience Section -->
+      <div class="container reveal" id="work-experience">
+        <div class="container-padding">
+          <h2>Work Experience</h2>
+          <div class="work-1">
+            <block class="date">03/2021 – 04/2021</block>
+            <br />
+            <header class="work-title">
+              <span>Game Tester /</span> Kung Fu Factory
+              Games
+            </header>
+            <ul class="work-list">
+              <li>
+                Participated in product design reviews to provide input on
+                functional requirements, product designs, schedules, or potential
+                problems.
+              </li>
+              <li>
+                Generated concise written reports to detail discrepancies found
+                during testing and entered findings into bug tracking system.
+              </li>
+              <li>
+                Troubleshot bugs to find the root cause and improve data collection
+                methods.
+              </li>
+            </ul>
+          </div>
+          <div class="work-2">
+            <block class="date">10/2021 – Current</block>
+            <br />
+            <header class="work-title">
+              <span>Store Standards Associate /</span>
+              Walmart
+            </header>
+            <ul class="work-list">
+              <li>
+                Handled client inquiries with exceptional professionalism and
+                enthusiasm.
+              </li>
+              <li>
+                Informed customers about product lines and services offered by the
+                company.
+              </li>
+              <li>
+                Provided customer service and issue resolution to increase QA
+                satisfaction levels.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form Section -->
+      <div class="container reveal" id="contact-section">
+        <div class="container-padding">
+          <h2>Contact Me</h2>
+          <div class="contact-box">
+            <div class="contact-info">
+              <header class="contact-info-main-header">Ahmad Masud</header>
+              <header class="contact-info-sub-header">Programmer</header>
+              <p>
+                Send me a message if you have any questions for me or call during
+                appropriate hours.
+              </p>
+              <a></i>Phone: 604-441-7868</a>
+              <br />
+              <a>Email: ahmadmasud25@hotmail.com</a>
+            </div>
+            <form
+              class="contact-form"
+              action="https://formsubmit.co/ahmadmasud25@hotmail.com"
+              method="POST"
+            >
+              <input
+                type="text"
+                class="input-field"
+                name="name"
+                placeholder="Full Name"
+                required
+              />
+              <input
+                type="email"
+                class="input-field"
+                name="email"
+                placeholder="Email Address"
+                required
+              />
+              <textarea
+                type="text"
+                class="textarea-field"
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <input type="submit" class="submit-button" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- End -->
+      <section class="footer">
+        <div class="footer-text">        
+          <header>Ahmad Masud</header>
+          <p>Thank you for visiting my website if you have any questions or concerns please email me or send me a message.</p>
+        </div>
+        <div class="vr"></div>
+        <div class="quick-links">
+          <ul>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#about-me">About</a>
+            </li>
+            <li>
+              <a href="#my-skills">Skills</a>
+            </li>
+            <li>
+              <a href="#what-i-do">What I Do</a>
+            </li>
+            <li>
+              <a href="#work-experience">Work</a>
+            </li>
+            <li>
+              <a href="#contact-section">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="vr"></div>
+        <div class="footer-socials">
+          <a
+            href="https://www.facebook.com/AhmadMasud25"
+            class="facebook"
+            class="social-link"
+            target="”_blank”"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://twitter.com/_AhmadMasud"
+            class="twitter"
+            class="social-link"
+            target="”_blank”"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/_ahmadmasud/"
+            class="instagram"
+            class="social-link"
+            target="”_blank”"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ahmad-masud-469926225/"
+            class="linkedin"
+            class="social-link"
+            target="”_blank”"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://discord.gg/Vqgu6mgCdH"
+            class="discord"
+            class="social-link"
+            target="”_blank”"
+          >
+            <i class="fab fa-discord"></i>
+          </a>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+
+<!-- All html written by Ahmad Masud. Please do not redistribute this code. -->
