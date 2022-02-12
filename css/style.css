@@ -609,13 +609,12 @@ hr {
   display: none;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   cursor: pointer;
   transition: all 200ms ease-in-out;
   background: transparent;
   border-radius: 50px;
-  margin: 5px;
 }
 
 @media screen and (max-width: 800px) {
@@ -628,7 +627,6 @@ hr {
   width: 30px;
   height: 3px;
   background: var(--font-color);
-  border-radius: 5px;
   transition: all 200ms ease-in-out;
 }
 
@@ -639,7 +637,6 @@ hr {
   width: 30px;
   height: 3px;
   background: var(--font-color);
-  border-radius: 5px;
   transition: all 200ms ease-in-out;
 }
 

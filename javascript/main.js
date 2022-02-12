@@ -13,7 +13,7 @@ function myFnc(e) {
     document.getElementById("toggle-button").classList.remove("open2");
     setTimeout(function () {
       document.getElementById("toggle-button").classList.remove("open");
-    }, 300);
+    }, 250);
   } else {
     elem.style.left = "0px";
     elem.style.opacity = 1;
@@ -21,7 +21,7 @@ function myFnc(e) {
     document.getElementById("toggle-button").classList.add("open");
     setTimeout(function () {
       document.getElementById("toggle-button").classList.add("open2");
-    }, 300);
+    }, 250);
   }
 }
 window.addEventListener("resize", function () {
