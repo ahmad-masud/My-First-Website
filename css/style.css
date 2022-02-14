@@ -82,7 +82,7 @@ body {
   margin: 45px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .container {
     width: 80%;
   }
@@ -117,7 +117,7 @@ p {
   transition: all 250ms ease-in-out;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   p {
     color: var(--font-color);
     font-size: 1.25em;
@@ -243,7 +243,7 @@ h2 {
 .top-nav-bar > .top-nav > li > a > .fas {
   margin-right: 0.5em;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .top-bar {
     width: 97.5%;
     height: 65px;
@@ -509,7 +509,6 @@ h2 {
   z-index: 1001;
   box-shadow: 20px 0px 20px 5px rgba(0, 0, 0, 0.05);
   opacity: 0;
-  border-radius: 0 30px 30px 0;
   overflow: hidden;
 }
 
@@ -557,19 +556,15 @@ hr {
 .nav-item > .site-name {
   text-decoration: none;
   margin: 0;
-  padding: 0.5em;
+  padding: 0.75em;
   font-size: 1.75em;
-  color: var(--main-color);
+  color: white;
   flex: 1;
   cursor: auto;
   text-align: center;
   margin-bottom: 0.25em;
-  margin-top: 0.5em;
   font-weight: bold;
-}
-
-.nav-item > .site-name > span {
-  color: var(--font-color);
+  background: var(--main-color);
 }
 
 .nav-item > .nav-link:hover {
@@ -756,7 +751,7 @@ hr {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .skills-list {
     font-size: 1em;
   }
@@ -883,7 +878,7 @@ hr {
   color: white;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .what-i-do-container > div > .icon {
     font-size: 2em;
   }
@@ -926,6 +921,7 @@ hr {
 .work-title {
   color: var(--font-color);
   font-size: 1.75em;
+  font-weight: bold;
 }
 
 .work-title > span {
@@ -952,7 +948,7 @@ hr {
   margin-bottom: 1em;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .work-title {
     font-size: 1.5em;
   }
@@ -1031,7 +1027,7 @@ hr {
   margin-bottom: 0;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .contact-info-main-header {
     font-size: 1.5em;
   }
