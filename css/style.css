@@ -546,9 +546,7 @@ hr {
   text-decoration: none;
   color: var(--navbar-children-color);
   font-size: 1em;
-  padding: 0.75em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding: 1em;
   flex: 1;
   transition: all 600ms ease;
   position: relative;
