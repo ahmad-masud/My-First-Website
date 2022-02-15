@@ -5,8 +5,6 @@
   --background-color: rgb(250, 250, 250);
   --secondary-background-color: rgb(255, 255, 255);
   --text-cursor-color: rgba(0, 0, 0, 0.75);
-  --navbar-background-color: rgb(250, 250, 250);
-  --navbar-children-color: black;
   --topbar-color: rgba(255, 255, 255, 0.85);
   --textbox-color: rgb(240, 240, 240);
 }
@@ -17,8 +15,6 @@
     --background-color: rgb(30, 30, 30);
     --secondary-background-color: rgb(35, 35, 35);
     --text-cursor-color: rgb(255, 255, 255);
-    --navbar-background-color: rgb(35, 35, 35);
-    --navbar-children-color: white;
     --topbar-color: rgba(35, 35, 35, 0.85);
     --textbox-color: rgb(30, 30, 30);
   }
@@ -159,7 +155,7 @@ h2 {
 }
 
 .top-bar {
-  margin-top: 0.5em;
+  margin-top: 1em;
   position: fixed;
   background: transparent;
   width: 85%;
@@ -183,7 +179,6 @@ h2 {
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  padding: inherit;
   margin-left: 1.5em;
 }
 
@@ -204,7 +199,6 @@ h2 {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   transition: opacity 500ms ease;
-  padding: inherit;
   margin-right: 1.5em;
 }
 
@@ -510,7 +504,7 @@ h2 {
   left: -250px;
   width: 250px;
   height: 100%;
-  background: var(--navbar-background-color);
+  background: var(--background-color);
   text-align: left;
   transition: all 1s ease;
   z-index: 1001;
@@ -521,7 +515,7 @@ h2 {
 
 hr {
   width: 80%;
-  background: var(--navbar-children-color);
+  background: var(--font-color);
   border: none;
   height: 1px;
   opacity: 0.15;
@@ -539,12 +533,13 @@ hr {
 
 .nav-socials {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  margin-top: 2em;
 }
 
 .nav-item > .nav-link {
   text-decoration: none;
-  color: var(--navbar-children-color);
+  color: var(--font-color);
   font-size: 1em;
   padding: 1em;
   flex: 1;
@@ -567,9 +562,12 @@ hr {
   flex: 1;
   cursor: auto;
   text-align: center;
-  margin-bottom: 0.25em;
+  margin-top: 0.25em;
   font-weight: bold;
-  background: var(--main-color);
+}
+
+.nav-item > .site-name > span {
+  color: var(--main-color);
 }
 
 .nav-item > .nav-link:hover {
@@ -577,11 +575,15 @@ hr {
   margin-left: 1.25em;
 }
 
+.nav-socials > a {
+  background: var(--secondary-background-color);
+  padding: 0.5em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.05);
+}
+
 .nav-socials > a > .fab {
-  color: var(--navbar-children-color);
-  margin: 0.8em;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  color: var(--font-color);
   transition: color 200ms ease;
 }
 
@@ -1205,6 +1207,7 @@ hr {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.75);
   transition: color 200ms ease;
+  line-height: 2em;
 }
 
 .quick-links > ul > li > a:hover {
