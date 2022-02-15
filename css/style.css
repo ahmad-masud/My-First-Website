@@ -60,8 +60,6 @@ html {
 /* Miscellaneous */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 2em;
   margin: 0;
   padding: 0;
   background: var(--background-color);
@@ -180,16 +178,17 @@ h2 {
 }
 
 .top-bar > .website-name {
-  float: left;
+  left: 0;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  padding: inherit;
+  margin-left: 1.5em;
 }
 
 .top-bar > .website-name > a {
   font-weight: bold;
-  margin-left: 1.5em;
   color: var(--font-color);
   font-size: 1.5em;
 }
@@ -199,10 +198,14 @@ h2 {
 }
 
 .top-nav-bar {
-  float: right;
-  margin-top: 1.4em;
-  margin-right: 1.5em;
+  right: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   transition: opacity 500ms ease;
+  padding: inherit;
+  margin-right: 1.5em;
 }
 
 .top-nav-bar > .top-nav {
@@ -243,13 +246,17 @@ h2 {
 .top-nav-bar > .top-nav > li > a > .fas {
   margin-right: 0.5em;
 }
+
 @media screen and (max-width: 1400px) {
   .top-bar {
     width: 97.5%;
     height: 65px;
   }
+  .top-bar > .website-name {
+    margin-left: 1em;
+  }
   .top-nav-bar {
-    margin-top: 1.075em;
+    margin-right: 1em;
   }
 }
 
@@ -719,6 +726,7 @@ hr {
 
 .skills-bar .bar .info span {
   font-size: 1.25em;
+  line-height: 1.5em;
   color: var(--font-color);
 }
 
@@ -1005,6 +1013,7 @@ hr {
 .contact-info > p {
   color: var(--font-color);
   font-size: 1.25em;
+  line-height: 1.5em;
   margin: 0;
   padding: 0;
   margin-top: 20px;
@@ -1015,6 +1024,7 @@ hr {
 .contact-info > a {
   color: var(--font-color);
   font-size: 1.25em;
+  line-height: 1.5em;
   margin: 0;
   padding: 0;
   margin-top: 20px;
