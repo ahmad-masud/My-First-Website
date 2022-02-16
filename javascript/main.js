@@ -33,17 +33,30 @@ window.addEventListener("resize", function () {
     elem.style.left = "-250px";
     elem.style.opacity = 0;
     document.getElementById("main").style.filter = "blur(0px)";
-    document.getElementById("toggle-button").classList.remove("open");
     document.getElementById("toggle-button").classList.remove("open2");
+    setTimeout(function () {
+      document.getElementById("toggle-button").classList.remove("open");
+    }, 250);
   }
 });
+
+function closeNavbar() {
+  var elem = document.getElementById("main-nav");
+  Style = window.getComputedStyle(elem);
+  Left = Style.getPropertyValue("left");
+
+  elem.style.left = "-250px";
+  elem.style.opacity = 0;
+  document.getElementById("main").style.filter = "blur(0px)";
+  document.getElementById("toggle-button").classList.remove("open");
+  document.getElementById("toggle-button").classList.remove("open2");
+}
 
 // Reveal Elements on Scroll //
 window.addEventListener("scroll", reveal);
 
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
-  var links = document.querySelectorAll(".top-link");
 
   for (var i = 0; i < reveals.length; i++) {
     var windowheight = window.innerHeight;
@@ -52,6 +65,12 @@ function reveal() {
 
     if (revealtop < windowheight - revealpoint) {
       reveals[i].classList.add("active");
+      /*for (var i = 0; i < links.length; i++) {
+        if (links[i].classList.contains(reveals[i].id)) {
+          links[i].style.color = "blue";
+          break;
+        }
+      }*/
     } else {
       reveals[i].classList.remove("active");
     }
