@@ -48,8 +48,10 @@ function closeNavbar() {
   elem.style.left = "-250px";
   elem.style.opacity = 0;
   document.getElementById("main").style.filter = "blur(0px)";
-  document.getElementById("toggle-button").classList.remove("open");
   document.getElementById("toggle-button").classList.remove("open2");
+  setTimeout(function () {
+    document.getElementById("toggle-button").classList.remove("open");
+  }, 250);
 }
 
 // Reveal Elements on Scroll //
