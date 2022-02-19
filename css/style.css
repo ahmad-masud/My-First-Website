@@ -72,7 +72,7 @@ body {
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.05);
 }
 
-.container > .container-padding {
+.container .container-padding {
   margin: 45px;
 }
 
@@ -89,7 +89,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .container > .container-padding {
+  .container .container-padding {
     margin: 30px;
   }
 }
@@ -173,7 +173,7 @@ h2 {
   box-shadow: 0px 0px 20px 5px rgb(0, 0, 0, 0.05);
 }
 
-.top-bar > .website-name {
+.top-bar .website-name {
   left: 0;
   position: absolute;
   top: 50%;
@@ -182,13 +182,13 @@ h2 {
   margin-left: 1.5em;
 }
 
-.top-bar > .website-name > a {
+.top-bar .website-name a {
   font-weight: bold;
   color: var(--font-color);
   font-size: 1.5em;
 }
 
-.top-bar > .website-name > a > span {
+.top-bar .website-name a span {
   color: var(--main-color);
 }
 
@@ -202,7 +202,7 @@ h2 {
   margin-right: 1.5em;
 }
 
-.top-nav-bar > .top-nav {
+.top-nav-bar .top-nav {
   display: flex;
   list-style-type: none;
   padding: 0;
@@ -210,7 +210,7 @@ h2 {
   flex-direction: row;
 }
 
-.top-nav-bar > .top-nav > li > a {
+.top-nav-bar .top-nav li a {
   text-decoration: none;
   margin-left: 1.75em;
   color: var(--font-color);
@@ -219,11 +219,11 @@ h2 {
   font-weight: bold;
 }
 
-.top-nav-bar > .top-nav > li > a:hover {
+.top-nav-bar .top-nav li a:hover {
   color: var(--main-color);
 }
 
-.top-nav-bar > .top-nav li:nth-child(6) > a {
+.top-nav-bar .top-nav li:nth-child(6) a {
   background: var(--main-color);
   padding: 1em;
   padding-top: 0.4em;
@@ -233,11 +233,11 @@ h2 {
   box-shadow: none;
 }
 
-.top-nav-bar > .top-nav li:nth-child(6) > a:hover {
+.top-nav-bar .top-nav li:nth-child(6) a:hover {
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
 }
 
-.top-nav-bar > .top-nav > li > a > .fas {
+.top-nav-bar .top-nav li a .fas {
   margin-right: 0.5em;
 }
 
@@ -246,7 +246,7 @@ h2 {
     width: 97.5%;
     height: 65px;
   }
-  .top-bar > .website-name {
+  .top-bar .website-name {
     margin-left: 1em;
   }
   .top-nav-bar {
@@ -258,7 +258,7 @@ h2 {
   .top-bar-container {
     justify-content: right;
   }
-  .top-bar > .website-name > a {
+  .top-bar .website-name a {
     margin-left: 1em;
     font-size: 1.25em;
   }
@@ -270,7 +270,7 @@ h2 {
   .top-nav-bar {
     display: none;
   }
-  .top-bar > .website-name {
+  .top-bar .website-name {
     display: none;
   }
 }
@@ -431,7 +431,7 @@ h2 {
   margin-bottom: 0.5em;
 }
 
-#welcome-sentence > span {
+#welcome-sentence span {
   color: var(--main-color);
 }
 
@@ -521,7 +521,7 @@ hr {
   opacity: 0.15;
 }
 
-.navbar > .side-nav {
+.navbar .side-nav {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -537,7 +537,7 @@ hr {
   margin-top: 2em;
 }
 
-.nav-item > .nav-link {
+.nav-item .nav-link {
   text-decoration: none;
   color: var(--font-color);
   font-size: 1em;
@@ -549,11 +549,11 @@ hr {
   margin-left: 0.75em;
 }
 
-.nav-item > .nav-link > .fas {
+.nav-item .nav-link .fas {
   margin-right: 0.75em;
 }
 
-.nav-item > .site-name {
+.nav-item .site-name {
   text-decoration: none;
   margin: 0;
   padding: 0.75em;
@@ -566,28 +566,28 @@ hr {
   font-weight: bold;
 }
 
-.nav-item > .site-name > span {
+.nav-item .site-name span {
   color: var(--main-color);
 }
 
-.nav-item > .nav-link:hover {
+.nav-item .nav-link:hover {
   color: var(--main-color);
   margin-left: 1.25em;
 }
 
-.nav-socials > a {
+.nav-socials a {
   background: var(--secondary-background-color);
   padding: 0.5em;
   border-radius: 0.5em;
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.05);
 }
 
-.nav-socials > a > .fab {
+.nav-socials a .fab {
   color: var(--font-color);
   transition: color 200ms ease;
 }
 
-.nav-socials > a > .fab:hover {
+.nav-socials a .fab:hover {
   color: grey;
 }
 
@@ -596,11 +596,11 @@ hr {
   transition: margin 1s ease;
 }
 
-.nav-item:last-child > .nav-link i {
+.nav-item:last-child .nav-link i {
   padding-top: 0.5em;
 }
 
-.nav-item:hover:last-child > .nav-link {
+.nav-item:hover:last-child .nav-link {
   background: rgb(35, 35, 35);
   color: white;
 }
@@ -833,7 +833,7 @@ hr {
   margin-top: 2em;
 }
 
-.what-i-do-container > div {
+.what-i-do-container div {
   display: block;
   padding: 20px;
   width: 400px;
@@ -844,7 +844,7 @@ hr {
   margin-bottom: 1em;
 }
 
-.what-i-do-container > div > .icon {
+.what-i-do-container div .icon {
   color: var(--main-color);
   font-size: 3em;
   text-align: left;
@@ -852,7 +852,7 @@ hr {
   transition: all 200ms ease-in;
 }
 
-.what-i-do-container > div > header {
+.what-i-do-container div header {
   color: var(--font-color);
   font-size: 2em;
   text-align: left;
@@ -860,7 +860,7 @@ hr {
   font-weight: bold;
 }
 
-.what-i-do-container > div > p {
+.what-i-do-container div p {
   margin: 0;
   padding: 0;
   color: var(--font-color);
@@ -869,52 +869,52 @@ hr {
   margin: 20px;
 }
 
-.what-i-do-container > div:hover {
+.what-i-do-container div:hover {
   background-image: none;
   background: var(--main-color);
 }
 
-.what-i-do-container > div:hover .icon {
+.what-i-do-container div:hover .icon {
   color: white;
 }
 
-.what-i-do-container > div:hover header {
+.what-i-do-container div:hover header {
   color: white;
 }
 
-.what-i-do-container > div:hover p {
+.what-i-do-container div:hover p {
   color: white;
 }
 
 @media screen and (max-width: 1400px) {
-  .what-i-do-container > div > .icon {
+  .what-i-do-container div .icon {
     font-size: 2em;
   }
-  .what-i-do-container > div > header {
+  .what-i-do-container div header {
     font-size: 1.75em;
   }
-  .what-i-do-container > div > p {
+  .what-i-do-container div p {
     font-size: 1.25em;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .what-i-do-container > div {
+  .what-i-do-container div {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .what-i-do-container > div > .icon {
+  .what-i-do-container div .icon {
     margin: 10px;
   }
 
-  .what-i-do-container > div > header {
+  .what-i-do-container div header {
     margin: 10px;
     font-size: 20px;
   }
 
-  .what-i-do-container > div > p {
+  .what-i-do-container div p {
     margin: 10px;
     font-size: 15px;
   }
@@ -932,7 +932,7 @@ hr {
   font-weight: bold;
 }
 
-.work-title > span {
+.work-title span {
   color: var(--main-color);
 }
 
@@ -1010,7 +1010,7 @@ hr {
   opacity: 0.5;
 }
 
-.contact-info > p {
+.contact-info p {
   color: var(--font-color);
   font-size: 1.25em;
   line-height: 1.5em;
@@ -1021,7 +1021,7 @@ hr {
   opacity: 0.5;
 }
 
-.contact-info > a {
+.contact-info a {
   color: var(--font-color);
   font-size: 1.25em;
   line-height: 1.5em;
@@ -1044,10 +1044,10 @@ hr {
   .contact-info-sub-header {
     font-size: 1.25em;
   }
-  .contact-info > p {
+  .contact-info p {
     font-size: 1em;
   }
-  .contact-info > a {
+  .contact-info a {
     font-size: 1em;
   }
 }
@@ -1072,12 +1072,12 @@ hr {
     margin-left: 0px;
   }
 
-  .contact-info > p {
+  .contact-info p {
     font-size: 0.85em;
     line-height: 1.5em;
   }
 
-  .contact-info > a {
+  .contact-info a {
     font-size: 0.85em;
     line-height: 1.5em;
   }
@@ -1180,7 +1180,7 @@ hr {
   width: 30%;
 }
 
-.footer-text > header {
+.footer-text header {
   font-weight: bold;
   font-size: 1.5em;
   color: white;
@@ -1188,14 +1188,14 @@ hr {
   padding: 0;
 }
 
-.footer-text > p {
+.footer-text p {
   color: white;
   font-size: 1em;
   margin: 0;
   padding: 0;
 }
 
-.quick-links > ul {
+.quick-links ul {
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -1203,14 +1203,14 @@ hr {
   padding: 0;
 }
 
-.quick-links > ul > li > a {
+.quick-links ul li a {
   color: white;
   text-decoration: none;
   transition: color 200ms ease;
   line-height: 2em;
 }
 
-.quick-links > ul > li > a:hover {
+.quick-links ul li a:hover {
   color: grey;
 }
 
@@ -1219,17 +1219,17 @@ hr {
   justify-content: center;
 }
 
-.footer-socials > a {
+.footer-socials a {
   text-decoration: none;
 }
 
-.footer-socials > a > .fab {
+.footer-socials a .fab {
   color: white;
   margin: 0.8em;
   transition: color 200ms ease;
 }
 
-.footer-socials > a > .fab:hover {
+.footer-socials a .fab:hover {
   color: grey;
 }
 
@@ -1240,19 +1240,19 @@ hr {
   .footer-text {
     width: 25%;
   }
-  .footer-text > header {
+  .footer-text header {
     font-size: 1.25em;
   }
-  .footer-text > p {
+  .footer-text p {
     font-size: 0.75em;
   }
-  .quick-links > ul > li > a {
+  .quick-links ul li a {
     font-size: 0.75em;
   }
   .footer-socials {
     flex-direction: column;
   }
-  .footer-socials > a > .fab {
+  .footer-socials a .fab {
     font-size: 0.75em;
   }
 }
