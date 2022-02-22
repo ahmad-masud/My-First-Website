@@ -62,7 +62,7 @@ body {
 }
 
 .container {
-  width: 75%;
+  width: 70%;
   margin: auto;
   margin-bottom: 10em;
   background: var(--secondary-background-color);
@@ -158,13 +158,13 @@ h2 {
   margin-top: 1em;
   position: fixed;
   background: transparent;
-  width: 85%;
-  height: 75px;
+  width: 75%;
+  height: 90px;
   backdrop-filter: blur(0px);
   z-index: 1000;
   box-shadow: none;
   transition: 500ms ease;
-  border-radius: 37.5px;
+  border-radius: 45px;
 }
 
 .sticky {
@@ -243,7 +243,7 @@ h2 {
 
 @media screen and (max-width: 1400px) {
   .top-bar {
-    width: 97.5%;
+    width: 85%;
     height: 65px;
   }
   .top-bar .website-name {
@@ -251,6 +251,12 @@ h2 {
   }
   .top-nav-bar {
     margin-right: 1em;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .top-bar {
+    width: 97.5%;
   }
 }
 
