@@ -693,6 +693,12 @@ hr {
 }
 
 /* Skills Section */
+.skills-header {
+  color: var(--font-color);
+  margin: 0.5em 0.25em;
+  font-size: 1.5em;
+}
+
 .skills-list {
   list-style-type: none;
   color: var(--font-color);
@@ -814,6 +820,9 @@ hr {
 }
 
 @media screen and (max-width: 600px) {
+  .skills-header {
+    font-size: 1em;
+  }
   .skills-list li {
     font-size: 0.85em;
     line-height: 1.5em;
