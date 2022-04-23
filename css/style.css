@@ -743,20 +743,20 @@ hr {
 }
 
 .skills-bar .bar .info .percent {
-  float: right;
+  margin-left: 0.25em;
+  opacity: 0.5;
 }
 
 .skills-bar .bar .progress-line {
   position: relative;
   height: 10px;
   width: 100%;
-  background: var(--textbox-color);
   border-radius: 30px;
+  background: var(--textbox-color);
 }
 
 .bar .progress-line span {
   height: 100%;
-  background: var(--main-color);
   position: absolute;
   border-radius: 30px;
   text-align: center;
@@ -797,14 +797,17 @@ hr {
 
 .bar .html span {
   width: 39.5%;
+  background: rgb(86, 61, 124);
 }
 
 .bar .css span {
   width: 51.1%;
+  background: rgb(227, 76, 38);
 }
 
 .bar .javascript span {
   width: 9.4%;
+  background: rgb(241, 224, 90);
 }
 
 .bar .lua span {
